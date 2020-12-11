@@ -9,11 +9,18 @@ export default {
   data () {
     return {
       chartOptions: {
-        series: [
-          {
-            data: [1, 2, 3]
+        xAxis: {
+          type: 'datetime'
+        },
+        series: [{
+          data: [1, 2, 3]
+        }],
+        plotOptions: {
+          series: {
+            pointIntervalUnit: 'month',
+            pointInterval: 1
           }
-        ]
+        }
       }
     }
   }
